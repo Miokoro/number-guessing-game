@@ -13,7 +13,7 @@ function game(){
         
     subBtn.onclick = function sub(){
         if(parseInt(enterNum.value) === parseInt(secretNum.textContent)){
-            result.textContent = `It took you ${guesses} ${guesses > 1 ? 'guesses' : 'guess'}`;
+            result.textContent = `It took you ${guesses} ${guesses > 1 || guesses == 0 ? 'guesses' : 'guess'}`;
             secretNum.hidden = false;
             gotAns = true;
             checker.textContent = "You got the correct number! ✅";
@@ -57,3 +57,4 @@ function game(){
 }
 
 game();
+
