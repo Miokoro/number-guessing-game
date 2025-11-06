@@ -1,0 +1,60 @@
+body{
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-shadow: 2px 2px 5px black;
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+}
+#welcome{
+    font-size: 25px;
+}
+#div1{
+    font-size: 25px;
+}
+#enterNum{
+    text-shadow: 2px 2px 5px black;
+    font-size: 20px;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px black;
+    font-weight: bold;
+}
+#subBtn{
+    font-size: 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: hsl(120, 76%, 59%);
+    box-shadow: 2px 2px 5px black;
+    font-weight: bold;
+}
+#subBtn:hover{
+    cursor: pointer;
+    background-color: hsl(120, 76%, 49%);
+    transform: scale(1.1);
+}
+#subBtn:active{
+    cursor: pointer;
+    background-color: hsl(120, 76%, 39%);
+    transform: scale(.99);
+}
+#playAgain{
+    cursor: pointer;
+    background-color: hsl(192, 64%, 45%);
+    border: none;
+    border-radius: 5px;
+    font-size: 20px;
+    box-shadow: 2px 2px 5px black;
+    font-weight: bold;
+}
+#playAgain:hover{
+    background-color: hsl(192, 64%, 55%);
+    cursor: pointer;
+    transform: scale(1.1);
+}
+#playAgain:active{
+    cursor: pointer;
+    background-color: hsl(192, 64%, 65%);
+    transform: scale(0.99);
+}
