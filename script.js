@@ -11,7 +11,7 @@ function game(){
 
     secretNum.textContent = Math.floor(Math.random() * 100);
         
-    function sub(){
+    subBtn.onclick = function sub(){
         if(parseInt(enterNum.value) === parseInt(secretNum.textContent)){
             result.textContent = `It took you ${guesses} ${guesses > 1 ? 'guesses' : 'guess'}`;
             secretNum.hidden = false;
@@ -33,11 +33,10 @@ function game(){
             }
         }
     }
-    subBtn.onclick = sub();
 
     document.body.addEventListener("keydown", event => {
         if(event.key == "Enter"){
-            sub();
+            subBtn.onclick();
         }
     });
 
